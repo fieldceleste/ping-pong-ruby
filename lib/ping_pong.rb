@@ -9,15 +9,15 @@ def ping_pong(input)
   elsif (input < 0)
     array.push ('enter a number greater than 0')
   elsif (input.class == Integer)
-    until (x < input )
+     while (x < input)
     x = x + 1
     # binding.pry
     if x % 15 == 0
-      array_ping.push("ping pong")
+      array.push('ping pong')
     elsif x % 3 == 0 
-      array_ping.push("ping")
+      array.push('ping')
     elsif x % 5 == 0 
-      array_ping.push("pong")
+      array.push('pong')
     else
       array.push(x)
     end
